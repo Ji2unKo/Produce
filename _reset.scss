@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  // out line -> a태그를 클릭했을때 주변에 미세한 선을 안보이게 
+  outline: 0;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
