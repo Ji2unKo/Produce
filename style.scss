@@ -1,3 +1,30 @@
-* {
-  margin: 0;
+@charset "UTF-8";
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  background: #000;
+  font: 17px/1.4 "orbitron";
+  letter-spacing: 1px;
+  color: #ddd;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  // perspective : 3d를 형태로 작업할거라서 자식요소에3d표시되려면 부모요소에 강제로 원근감을 지정
+  perspective: 1300px;
+
+  // wrap 직계 자속에만 하겠다 > 꺽새
+  > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
 }
