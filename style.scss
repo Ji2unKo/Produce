@@ -26,6 +26,12 @@ body {
     opacity: 0.5;
   }
 
+  // 원의 길이를 구하는법
+  // 지름 * 3.14 (곱하기) = 원의 둘레길이
+  // 원의 둘레길이 / 3.1 (나누기) = 지름
+  // 600 곱하기 8 -> 2400px / 3.14 나누기 = 764...(소수점)
+  // 764px (translateZ) article사이의 거리값
+
   #circle {
     position: absolute;
     top: 50%;
@@ -35,7 +41,9 @@ body {
     width: 600px;
     height: 800px;
     // perspective : 3d를 형태로 작업할거라서 자식요소에3d표시되려면 부모요소에 강제로 원근감을 지정
-    perspective: 1300px;
+    // perspective: 1300px;
+    // 입체적인 왜곡현상을 제어하고 싶을 때 숫자를 키워줌
+    perspective: 1700px;
 
 
     article {
@@ -44,6 +52,8 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
+      // 뒷면을 숨기기 
+      backface-visibility: hidden;
 
       // 공통 UI
       .inner {
@@ -54,7 +64,7 @@ body {
           position: relative;
           width: 100%;
           height: 100%;
-          background: rgba(255, 255, 255, .4);
+          background: rgba(255, 255, 255, .2);
           border: 1px solid rgba(255, 255, 255, .5);
           box-sizing: border-box;
           padding: 50px;
@@ -72,7 +82,9 @@ body {
 
       // 첫 번째 article
       &.face1 {
-        transform: rotateY(0deg);
+        // transform 특성은 아무리 자기의 모형이 변형되고 자기의 고유축은 변하지 않음
+        // -764px : 뒷면을 하고 반대로 보내고 원통 안쪽을 봐야되니깐 양수가아닌 음수로 
+        transform: rotateY(0deg) translateZ(-764px);
         .inner {
            div {
               width: 290px;
@@ -120,7 +132,7 @@ body {
 
       // 두 번째 article
       &.face2 {
-        transform: rotateY(45deg);
+        transform: rotateY(45deg) translateZ(-764px);
         .inner {
           div {
             h2 {
@@ -158,7 +170,7 @@ body {
 
       // 세 번째 article
       &.face3 {
-        transform: rotateY(90deg);
+        transform: rotateY(90deg) translateZ(-764px);
         .inner {
           > div {
             width: 100%;
@@ -213,7 +225,7 @@ body {
 
       // 네 번째 article
       &.face4 {
-        transform: rotateY(135deg);
+        transform: rotateY(135deg) translateZ(-764px);
         .inner {
           div {
             &:nth-of-type(1) {
@@ -255,7 +267,7 @@ body {
 
       // 다섯 번째 article
       &.face5 {
-        transform: rotateY(180deg);
+        transform: rotateY(180deg) translateZ(-764px);
         .inner {
           div {
             img {
@@ -295,7 +307,7 @@ body {
 
       // 여섯 번째 article
       &.face6 {
-        transform: rotateY(225deg);
+        transform: rotateY(225deg) translateZ(-764px);
         .inner {
           > div {
             width: 100%;
@@ -363,7 +375,7 @@ body {
 
       //일곱 번째 article
       &.face7 {
-        transform: rotateY(270deg);
+        transform: rotateY(270deg) translateZ(-764px);
         .inner {
           div > div {
             position: relative;
@@ -409,7 +421,7 @@ body {
 
       //여덜 번째 article
       &.face8{
-        transform: rotateY(315deg);
+        transform: rotateY(315deg) translateZ(-764px);
         .inner {
           div {
             &:nth-of-type(1) {
