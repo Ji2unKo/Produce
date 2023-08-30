@@ -356,10 +356,8 @@ body {
         }
       }
 
-      //일곱 번재 article
+      //일곱 번째 article
       &.face7 {
-        display: block;
-
         .inner {
           div > div {
             position: relative;
@@ -397,6 +395,98 @@ body {
                 bottom: 85px;
                 right: -18px;
                 width: 90%;
+              }
+            }
+          }
+        }
+      }
+
+      //여덜 번째 article
+      &.face8{
+        display: block;
+
+        .inner {
+          div {
+            &:nth-of-type(1) {
+              width: 100%;
+              height: 400px;
+              margin-bottom: 20px;
+
+              i {
+                position: absolute;
+                bottom: 60px;
+                left: 50px;
+                color: #fff;
+                font-size: 200px;
+                opacity: .9;
+                transition: .5s;
+              }
+
+              span {
+                position: absolute;
+                bottom: 90px;
+                right: 60px;
+                font: bold 120px/1 "Orbitron";
+
+                em {
+                  position: absolute;
+                  top: -20px;
+                  right: -20px;
+                  font: bold normal 60px/1 "arial";
+                }
+              }
+            }
+
+            &:nth-of-type(2), &:nth-of-type(3) {
+              width: 290px;
+              height: 380px;
+              margin-right: 20px;
+              float: left;
+              text-align: center;
+
+              i {
+                font-size: 120px;
+                color: #fff;
+                opacity: .8;
+                transition: .5s;
+              }
+              
+              h3 {
+                margin-top: 30px;
+                margin-bottom: 14px;
+                font: bold 20px/1 "Orbitron";
+              }
+
+              p {
+                font: 16px/1 "arial";
+                color: #ccc;
+                margin-bottom: 40px;
+              }
+
+              span {
+                font: 30px/1 "Orbitron";
+                color: #ddd;
+
+                strong {
+                  position: relative;
+                  top: -16px;
+                  left: 5px;
+                  font-size: 6px;
+                  color: #bbb;
+                }
+              }
+            }
+
+            
+            &:nth-of-type(3) {
+              margin-right: 0;
+            }
+
+            &:hover {
+              i {
+                transform: scale(1.2);
+                color: lightcyan;
+                text-shadow: 0 0 10px aqua;
               }
             }
           }
