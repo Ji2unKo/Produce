@@ -291,8 +291,6 @@ body {
 
       // 여섯 번째 article
       &.face6 {
-        display: block;
-
         .inner {
           > div {
             width: 100%;
@@ -352,6 +350,53 @@ body {
                 transform: scale(1.2);
                 color: lightcyan;
                 text-shadow: 0 0 0 10px aqua;
+              }
+            }
+          }
+        }
+      }
+
+      //일곱 번재 article
+      &.face7 {
+        display: block;
+
+        .inner {
+          div > div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #aaa;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            video {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              opacity: .9;
+            }
+
+            h2 {
+              position: absolute;
+              top: 140px;
+              left: 50px;
+              font-size: 40px;
+              color: #fff;
+              text-align: left;
+              text-shadow: 2px 2px 5px #555;
+            }
+
+            img {
+              &:nth-of-type(1) {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+              }
+              &:nth-of-type(2) {
+                position: absolute;
+                bottom: 85px;
+                right: -18px;
+                width: 90%;
               }
             }
           }
