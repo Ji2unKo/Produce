@@ -30,7 +30,6 @@ main header {
   width: 20%;
   height: 100%;
   padding: 10vh 5vw;
-  border: 10px solid pink;
 }
 main header h1 {
   display: flex;
@@ -58,11 +57,34 @@ main section {
   width: 80%;
   height: 100%;
   padding-top: 10vh;
-  border: 10px solid yellow;
+}
+main section article {
+  position: relative;
+  flex: 1;
+  transition: 0.5s;
+}
+main section article::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 80;
+  left: -100%;
+  opacity: 0;
+  transition: 1s;
+  width: 100%;
+  height: 90%;
+  background-color: #555;
+}
+main section article:hover {
+  flex: 1.3;
+}
+main section article:hover::before {
+  left: 0;
+  opacity: 1;
 }
 main nav {
   position: absolute;
-  top: 6vh;
+  top: 4vh;
   right: 5vw;
   border: 10px solid aqua;
 }
