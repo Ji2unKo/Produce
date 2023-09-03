@@ -65,9 +65,37 @@ main {
         left: -100%;
         opacity: 0;
         transition: 1s;
+        width: 80%;
+        height: 95%;
+        background-color: #444;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
+      }
+
+      .inner {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
         width: 100%;
-        height: 90%;
-        background-color: #555;
+        height: 100%;
+        padding: 50px 30px 100px;
+
+        figure {
+          position: relative;
+          top: 0;
+          width: 100%;
+          height: 15vh;
+          overflow: hidden;
+          transition: .5s;
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, .1);
+          filter: saturate(.2);
+
+          video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
       }
 
       &:hover {
@@ -76,6 +104,14 @@ main {
         &::before {
           left: 0;
           opacity: 1;
+        }
+
+        .inner {
+          figure {
+            top: 25px;
+            height: 20vh;
+            filter: saturate(1.2);
+          }
         }
       }
     }

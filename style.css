@@ -71,9 +71,34 @@ main section article::before {
   left: -100%;
   opacity: 0;
   transition: 1s;
+  width: 80%;
+  height: 95%;
+  background-color: #444;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+main section article .inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
   width: 100%;
-  height: 90%;
-  background-color: #555;
+  height: 100%;
+  padding: 50px 30px 100px;
+}
+main section article .inner figure {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  filter: saturate(0.2);
+}
+main section article .inner figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 main section article:hover {
   flex: 1.3;
@@ -81,6 +106,11 @@ main section article:hover {
 main section article:hover::before {
   left: 0;
   opacity: 1;
+}
+main section article:hover .inner figure {
+  top: 25px;
+  height: 20vh;
+  filter: saturate(1.2);
 }
 main nav {
   position: absolute;
