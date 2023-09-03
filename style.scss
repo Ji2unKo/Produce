@@ -19,6 +19,31 @@ main {
     height: 100%;
     padding: 10vh 5vw;
     border: 10px solid pink;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      color: #fff;
+      i {
+        font-size: 5vw;
+        margin-bottom: 15px;
+      }
+
+      span {
+        // wrap줬는데 줄바꿈이 안되서 width : 100% 주면 줄바꿈
+        width: 100%;
+        text-align: center;
+        font: normal 0.8vw/1 "arial";
+      }
+    }
+    
+    p {
+      font: normal 11px/1.2 "arial";
+      color: #888;
+      text-align: center;
+    }
   }
 
   section {

@@ -32,6 +32,27 @@ main header {
   padding: 10vh 5vw;
   border: 10px solid pink;
 }
+main header h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  color: #fff;
+}
+main header h1 i {
+  font-size: 5vw;
+  margin-bottom: 15px;
+}
+main header h1 span {
+  width: 100%;
+  text-align: center;
+  font: normal 0.8vw/1 "arial";
+}
+main header p {
+  font: normal 11px/1.2 "arial";
+  color: #888;
+  text-align: center;
+}
 main section {
   display: flex;
   width: 80%;
