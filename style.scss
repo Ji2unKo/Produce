@@ -14,7 +14,7 @@ main {
     // 줄 바꿈 속성 추가
     flex-wrap: wrap;
     // wrap -> content 사용
-    align-content: center;
+    align-content: space-between;
     width: 20%;
     height: 100%;
     padding: 10vh 5vw;
