@@ -66,5 +66,15 @@ main nav {
   right: 5vw;
   border: 10px solid aqua;
 }
+main nav ul {
+  display: flex;
+}
+main nav ul li {
+  margin: 15px;
+}
+main nav ul li a {
+  font-size: 18px;
+  color: #bbb;
+}
 
 /*# sourceMappingURL=style.css.map */

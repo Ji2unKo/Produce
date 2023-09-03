@@ -59,6 +59,19 @@ main {
     top: 6vh;
     right: 5vw;
     border: 10px solid aqua;
+
+    ul {
+      display: flex;
+
+      li {
+        margin: 15px;
+
+        a {
+          font-size: 18px;
+          color: #bbb;
+        }
+      }
+    }
   }
 }
 
