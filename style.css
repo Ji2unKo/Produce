@@ -33,6 +33,7 @@ main .swiper-wrapper .swiper-slide {
   background: rgba(255, 255, 255, 0.2);
   font-size: 100px;
   color: #fff;
+  border: 1px solid #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
