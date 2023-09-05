@@ -41,8 +41,16 @@
       navigation : {
         prevEl : ".swiper-button-prev",
         nextEl : ".swiper-button-next"
+      },
+      effect : "coverflow",
+      coverflowEffect : {
+        rotate : 50, // y축 회전각도
+        stretch : -100, // 당겨짐 정도
+        depth : 400, // 입체적인 왜곡효과 정도
+        depth: 400, //입체적인 왜곡효과 정도
+        slideShadows: false //패널의 그림자 설정
       }
-    })
+    });
   </script>
 </body>
 </html>
