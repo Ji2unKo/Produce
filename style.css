@@ -20,5 +20,19 @@ main {
   background: linear-gradient(45deg, violet, cornflowerblue);
   overflow: hidden;
 }
+main .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+main .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 100px;
+  color: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
