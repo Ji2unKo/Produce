@@ -45,8 +45,23 @@ main .swiper-wrapper .swiper-slide .inner .con img {
   width: 100%;
 }
 main .swiper-wrapper .swiper-slide .inner .con h2 {
-  font: nomal 40px/1.1 "roboto";
+  font: nomal 40px/1 "roboto";
   color: #111;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .swiper-wrapper .swiper-slide .inner .con h2::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #888;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+main .swiper-wrapper .swiper-slide .inner .con p {
+  font: 14px/1.3 "arial";
+  color: #777;
 }
 
 /*# sourceMappingURL=style.css.map */

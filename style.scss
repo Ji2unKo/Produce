@@ -35,8 +35,25 @@ main {
           }
 
           h2 {
-            font: nomal 40px/1.1 "roboto";
+            font: nomal 40px/1 "roboto";
             color: #111;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            &::before {
+              content: "";
+              display: block;
+              width: 30px;
+              height: 1px;
+              background: #888;
+              margin-bottom: 10px;
+              transition: 1s;
+            }
+          }
+
+          p {
+            font: 14px/1.3 "arial";
+            color: #777;
           }
         }
       }
