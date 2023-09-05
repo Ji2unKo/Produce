@@ -19,6 +19,9 @@
     </section>
 
     <nav class="swiper-pagination"></nav>
+
+    <nav class="swiper-button-prev"></nav>
+    <nav class="swiper-button-next"></nav>
   </main>
 
   <script>
@@ -33,7 +36,11 @@
       centersdSlides : true, // 활성화 패널을 항상 가로 가운대 배치
       pagination : {
         el : ".swiper-pagination", // 페이지네이션 버튼 추가
-        clickable : true, // 클릭가능 여부 설정
+        clickable : true // 클릭가능 여부 설정
+      },
+      navigation : {
+        prevEl : ".swiper-button-prev",
+        nextEl : ".swiper-button-next"
       }
     })
   </script>
