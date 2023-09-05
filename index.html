@@ -17,6 +17,8 @@
       <article class="swiper-slide">4</article>
       <article class="swiper-slide">5</article>
     </section>
+
+    <nav class="swiper-pagination"></nav>
   </main>
 
   <script>
@@ -29,6 +31,10 @@
       slidesPerView : "auto", //숫자(해당갯수 단위로 패널보임), "auto"로 지정하면 : 100% , 특정크기를 지정할수 있다
       spaceBetween : 30, // 패널사이 간격(px)
       centersdSlides : true, // 활성화 패널을 항상 가로 가운대 배치
+      pagination : {
+        el : ".swiper-pagination", // 페이지네이션 버튼 추가
+        clickable : true, // 클릭가능 여부 설정
+      }
     })
   </script>
 </body>
