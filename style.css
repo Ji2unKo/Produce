@@ -84,7 +84,7 @@ main .swiper-wrapper .swiper-slide .inner .con img {
   width: 100%;
 }
 main .swiper-wrapper .swiper-slide .inner .con h2 {
-  font: normal 40px/1 "roboto";
+  font: nomal 40px/1 "roboto";
   color: #111;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -104,7 +104,7 @@ main .swiper-wrapper .swiper-slide .inner .con p {
 }
 main .swiper-wrapper .swiper-slide-active .inner {
   opacity: 1;
-  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
 main .swiper-wrapper .swiper-slide-active .inner::before {
   animation: ani 1s ease 0s 1;
@@ -112,7 +112,8 @@ main .swiper-wrapper .swiper-slide-active .inner::before {
 main .swiper-wrapper .swiper-slide-active .inner::after {
   animation: ani 1s ease 0.3s 1;
 }
-main .swiper-wrapper .swiper-slide-prev .inner, main .swiper-wrapper .swiper-slide-next .inner {
+main .swiper-wrapper .swiper-slide-prev .inner,
+main .swiper-wrapper .swiper-slide-next .inner {
   opacity: 0.7;
 }
 main .swiper-pagination-fraction {
